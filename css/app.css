@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  min-height: 5rem;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont{
+  min-width: 20rem;
+  margin: 5rem 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px black;
+
+  /* border: 2px dashed red; */
+}
+
+form{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* border: 2px dashed red; */
+}

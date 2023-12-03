@@ -11,62 +11,65 @@
     <h1>Painel de atentimento</h1>
   </header>
   <section class="ficha">
-    <div class="cont-ficha">
-      <h3>Preencha as informações abaixo para o cadastro:</h3>
-      <p>Qual tipo de atendimento o senhor(a) nescessita?</p>
+      <form action="#" class="cont-ficha">
+        <h3>Preencha as informações abaixo para o cadastro:</h3>
 
-      <div class="nesc">
-        <div>
-          <input type="radio" name="nesc" id="clinico">
-          <label for="clinico">Clinico geral</label>
+        <p>Qual tipo de atendimento o senhor(a) nescessita?</p>
+        <div class="nesc">
+          <div>
+            <input type="radio" name="nesc" id="clinico">
+            <label for="clinico">Clinico geral</label>
+          </div>
+
+          <div>
+            <input type="radio" name="nesc" id="orto">
+            <label for="orto">Ortopedista</label>
+          </div>
+
+          <div>
+            <input type="radio" name="nesc" id="demarto">
+            <label for="demarto">Demartologista</label>
+          </div>
+
+          <div>
+            <input type="radio" name="nesc" id="gine">
+            <label for="gine">Ginecologista</label>
+          </div>
         </div>
 
-        <div>
-          <input type="radio" name="nesc" id="orto">
-          <label for="orto">Ortopedista</label>
+        <p>Insira o nome completo do paciente:</p>
+        <div class="cont-nome">
+          <label for="nome_pac">Nome:</label>
+          <input type="text" name="nome" id="nome_pac" placeholder="Insira nome completo" class="nome">
         </div>
 
-        <div>
-          <input type="radio" name="nesc" id="demarto">
-          <label for="demarto">Demartologista</label>
+        <p>Insira a data de nascimento do paciente:</p>
+        <div class="data">
+          <label for="data_pac">Data:</label>
+          <input type="date" name="nasc" id="data_pac" class="nasc">
         </div>
 
-        <div>
-          <input type="radio" name="nesc" id="gine">
-          <label for="gine">Ginecologista</label>
+
+        <p>Qual o sexo do paciente?</p>
+        <div class="sexo">
+          <div>
+            <input type="radio" name="sexo" id="male">
+            <label for="male">Masculino</label>
+          </div>
+
+          <div>
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+          </div>
+
+          <div>
+            <input type="radio" name="sexo" id="outro">
+            <label for="outro">Outro</label>
+          </div>
         </div>
-      </div>
-
-      <p>Insira o nome completo do paciente:</p>
-      <div class="cont-nome">
-        <label for="nome_pac">Nome:</label>
-        <input type="text" name="nome" id="nome_pac" placeholder="Insira nome completo" class="nome">
-      </div>
-
-      <p>Insira a data de nascimento do paciente:</p>
-      <div class="data">
-        <label for="data_pac">Data:</label>
-        <input type="date" name="nasc" id="data_pac" class="nasc">
-      </div>
-
-      <p>Qual o sexo do paciente?</p>
-      <div class="sexo">
-        <div>
-          <input type="radio" name="sexo" id="male">
-          <label for="male">Masculino</label>
-        </div>
-
-        <div>
-          <input type="radio" name="sexo" id="fem">
-          <label for="fem">Feminino</label>
-        </div>
-
-        <div>
-          <input type="radio" name="sexo" id="outro">
-          <label for="outro">Outro</label>
-        </div>
-      </div>
-    </div>
+        
+        <button type="submit" id="submit">Enviar</button>
+      </form>
   </section>
 </body>
 </html>
